@@ -93,8 +93,7 @@ namespace BankApplication.Models
                 User.Property(e => e.UserName)
                     .IsRequired()
                     .HasMaxLength(255)
-                    .IsUnicode(false)
-                    .UseCollation("SQL_Latin1_General_CP1_CS_AS");
+                    .IsUnicode(false);
             });
 
             OnModelCreatingPartial(modelBuilder);
